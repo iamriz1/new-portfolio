@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, Raleway-Black	;
+	overflow-x: hidden;
+}
+header{
+	margin: 0;
+	padding: 0 1%;
+	width: 98%;
+	display: flex;
+	color: #444;
+	position: fixed;
+	background: transparent;
+	z-index: 3;
+	transition: 1s;
+}
+a{
+	text-decoration: none;
+	color: #444;
+}
+#logo, #nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 500;
+	color: #444;
+}
+
+#logo img{
+	height: 40px;
+	width: 40px;
+	padding: 5px 17px 5px 0px;
+}
+.nav-item{
+	margin: 0 1vw;
+	padding: 0px 5px 0px 5px;
+}
+.nav-item:hover{
+	text-decoration: underline;
+}
+
+#hero{
+	background: url("img/australia pic.jpg") center/cover no-repeat fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+.box{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+}
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 4;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box span:nth-child(1){
+	animation-delay: .2s;
+}
+.box1{
+	position: absolute;
+	top: 190%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+}
+.box1 span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 4;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box1 span:nth-child(1){
+	animation-delay: .2s;
+}
+.box2{
+	position: absolute;
+	top: 290%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+}
+.box2 span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 4;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box2 span:nth-child(1){
+	animation-delay: .2s;
+}
+.box3{
+	position: absolute;
+	top: 390%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+}
+.box3 span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 4;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box3 span:nth-child(1){
+	animation-delay: .2s;
+}
+.box4{
+	position: absolute;
+	top: 490%;
+	left: 50%;
+	transition: translate(-50%,-50%);
+}
+.box4 span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #444;
+	border-right: 2px solid #444;
+	z-index: 4;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box4 span:nth-child(1){
+	animation-delay: .2s;
+}
+.rectangle {
+	position: absolute;
+ 	height: 100vh;
+ 	width: 50%;
+  	background-color: #fff;
+  	z-index: 0;
+  	opacity: 0.75;
+}
+#hero-text{
+	position: relative;
+	color: #444;
+	font-size: 150px;
+	font-family: "Raleway";
+	font-weight: bolder;
+	margin: 0px 0px 0px 82px;
+	z-index: 2;
+}
+#intro{
+	position: relative;
+	color: #444;
+	font-family: "Raleway";
+	font-size: 20px;
+	margin: 0px 0px 0px 91.5px;
+	z-index: 2;
+}
+#hey{
+	position: relative;
+	color: #444;
+	font-family: "Raleway";
+	font-size: 20px;
+	margin: 0px 0px 0px 91.5px;
+	z-index: 2;
+}
+#tncakes{
+	background: url("img/cupcakes.jpg") center/cover no-repeat fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+.rect1{
+	height: 100vh;
+	width: 25%;
+	left: 75%;
+}
+
+.rect2{
+	height: 100vh;
+	width: 25%;
+}
+
+.txtname{
+	position: relative;
+	color: #444;
+	font-size: 100px;
+	font-family: "Raleway";
+	font-weight: bolder;
+	text-align: center;
+	left: 25%;
+	margin: 0px;
+	z-index: 2;
+}
+
+.desc{
+	position: relative;
+	color: #444;
+	font-family: "Raleway";
+	font-size: 25px;
+	margin: 0px;
+	text-align: center;
+	left: 25%;
+	z-index: 2;
+}
+
+.rect3 {
+	position: absolute;
+ 	height: 300px;
+ 	width: 500px;
+  	background-color: #989696;
+  	left: 57.5%;
+  	z-index: 1;
+  	opacity: 0.6;
+}
+
+#snake{
+	background: url("img/snakegame.png") center/cover no-repeat fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+.txtname-rev{
+	position: relative;
+	color: #444;
+	font-size: 100px;
+	font-family: "Raleway";
+	font-weight: bolder;
+	text-align: center;
+	right: 25%;
+	margin: 0px;
+	z-index: 2;
+}
+
+.desc-rev{
+	position: relative;
+	color: #444;
+	font-family: "Raleway";
+	font-size: 25px;
+	margin: 0px;
+	right: 25%;
+	z-index: 2;
+	text-align: center;
+}
+
+.rect3-rev {
+	position: absolute;
+ 	height: 300px;
+ 	width: 500px;
+  	background-color: #989696;
+  	right: 56%;
+  	z-index: 1;
+  	opacity: 0.6;
+}
+
+#calc{
+	background: url("img/calculator.png") center/cover no-repeat fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+#todo{
+	background: url("img/todo-1.png") center/cover no-repeat fixed;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+#contact{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+#resume{
+	position: relative;
+	color: #444;
+	font-family: "Raleway";
+	font-size: 75px;
+	font-weight: normal;
+	margin: -90px;
+	top: 15%;
+	right: 25%;
+	z-index: 5;
+	text-align: center;
+}
+#resume-link{
+	position: relative;
+	text-decoration: none;
+	color:#000;
+	margin: 0;
+	padding: 0;
+}
+#resume-link:after{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	bottom: -0.5px;
+	background-color: black;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+}
+#resume-link:hover{
+	color: #000;
+}
+#resume-link:hover:after{
+	width: 100%;
+}
+#logos{
+	width: fit-content;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	left: 12.3%;
+	top: 23%;
+	z-index: 7;
+}
+.socials{
+	height: 42px;
+	width: 42px;
+	margin-top: -70px;
+	margin-right: 65px;
+	margin-left: 65px;
+	margin-bottom: 15px;
+}
+@keyframes animate
+{
+	0%
+	{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}

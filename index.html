@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100){
+					$("header").css({"background": "white"})
+				}
+				else {
+					$("header").css({"background": "transparent"})
+				}
+			})
+		})
+	</script>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="aos.css">
+	<title>Rizwan</title>
+	<link rel="icon" type="image/ico" href="img/rlogo.png" />
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img src="img/rlogo.png">
+		</div>
+		<div id="nav">
+			<a href="#hero" class="nav-item" id="home">Home</a>
+			<a href="#tncakes" class="nav-item">Work</a>
+			<a href="#contact" class="nav-item">Contact</a>
+		</div>
+	</header>
+	<div id="fullpage">
+		<div id="hero">
+			<div class="rectangle"></div>
+			<p id="hey">Hey there! I am</p>
+			<p id="hero-text">Rizwan</p>
+			<p id="intro">Web Designer. UI/UX Developer. Front End Engineer.</p>
+			<a href="#tncakes">
+				<div class="box">
+					<span></span>
+					<span></span>
+				</div>
+			</a>
+		</div>
+		<div id="tncakes">
+			<div class="rect3"></div>
+			<div class="rectangle rect1"></div>
+			<a target="_blank" href="http://www.tncakes.tk">
+			<h2 class="txtname">TN Cakes</h2>
+			</a>
+			<p class="desc">e-commerce website for a bakery.</p>
+			<a href="#snake">
+				<div class="box1">
+					<span></span>
+					<span></span>
+				</div>
+			</a>
+		</div>
+		<div id="snake">
+			<div class="rect3-rev"></div>
+			<div class="rectangle rect2"></div>
+			<a target="_blank" href="snake/snake.html">
+			<h2 class="txtname-rev" ">Snake</h2>
+			</a>
+			<p class="desc-rev">A simple snake game I've developed<br> using JavaScript for fun.</p>
+			<a href="#calc">
+				<div class="box2">
+					<span></span>
+					<span></span>
+				</div>
+			</a>
+		</div>
+		<div id="calc">
+			<div class="rect3"></div>
+			<div class="rectangle rect1"></div>
+			<a target="_blank" href="calculator/calc.html">
+			<h2 class="txtname" ">Calculator</h2>
+			</a>
+			<p class="desc">This is a calculator that I have<br> designed using JS, HTML and CSS.</p>
+			<a href="#todo">
+				<div class="box3">
+					<span></span>
+					<span></span>
+				</div>
+			</a>
+		</div>
+		<div id="todo">
+			<div class="rect3-rev"></div>
+			<div class="rectangle rect2"></div>
+			<a target="_blank" href="To do list/todo.html">
+			<h2 class="txtname-rev" ">Todo</h2>
+			</a>
+			<p class="desc-rev">A todo list app to organise your day </br>to day activities and make you life easier.</p>
+			<a href="#contact">
+				<div class="box4">
+					<span></span>
+					<span></span>
+				</div>
+			</a>
+		</div>
+		<div id="contact">
+			<div class="rect3"></div>
+			<div class="rectangle rect1" style="background: #a1a1a1; opacity: 0.75;"></div>
+			<p id="resume">Download my<br><a id="resume-link" target="_blank" href="resume/New resume-1.pdf">resume</a>.</p>
+			<h2 class="txtname">Contact</h2>
+			<p class="desc">Want to know more? You can get in<br> touch with me at rizvercetti@gmail.com</p>
+			<div id="logos">
+			<a target="_blank" href="https://www.facebook.com/Riz.One96">
+				<img class="socials" src="img/fblogo2.png">
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/in/iamriz1">
+				<img class="socials" src="img/linkedin-logo1.png">
+			</a>
+		</div>		
+		</div>
+	</div>
+</body>
+</html>
